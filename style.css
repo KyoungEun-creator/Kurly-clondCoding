@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+.navbar-purple {
+    padding: 10px;
+    background-color: #560C7B;
+    color: white;
+    text-align: center;
+}
+.navbar-purple-x {
+    text-align: right;
+}
+.navbar-purple close {
+    display: none;
+}
+.navbar-member {
+    color: black;
+    text-align: right;
+}
+.cust-center-modal {
+    display: block;
+}
+
+.navbar-search {     /* 가로로 한 줄에 정렬*/
+    float: left;
+}
