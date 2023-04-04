@@ -1,7 +1,10 @@
-document.querySelector('.navbar-purple-x').addEventListener('click',function(){
-    document.querySelector('.navbar-purple').element.classList.add('close')
-});
-
-document.querySelector('.cust-center-modal').addEventListener('mouseover',function(){
-    document.querySelector('.').display='block'
-});
+document.querySelector('#customer-center').addEventListener('mouseover',function(){
+    if (document.querySelector('#cust-center').style.display='none'){
+        document.querySelector('#cust-center').style.display='block';
+    }
+})
+document.querySelector('#customer-center').addEventListener('mouseout',function(){
+    if (document.querySelector('#cust-center').style.display='block'){
+        document.querySelector('#cust-center').style.display='none';
+    }
+})

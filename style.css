@@ -1,3 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 시작 */
+
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -5,16 +57,18 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 #navbar {
     border: 1px solid black;
     height: 42px;
 }
 #navbar_wrap {
-    padding: 10px;
+    padding: 13px;
     background-color: #560C7B;
-    color: white;
+    color: #ffffff;
     text-align: center;
+    font-size: 14px;
 }
 #header {
     border: 1px solid black;
@@ -26,6 +80,26 @@ a {
     margin: 0 auto;
     color: black;
     text-align: right;
+    position: 1000px;
+    display: flex;
+}
+#header-member span {
+    margin: 0 auto;
+}
+#header-member img {
+    width: 8px;
+    height: 5px;
+}
+#cust-center {
+    border: 1px solid lightgray;
+    flex-direction: column;
+    width: 120px;
+    display: none;
+    float: right;
+}
+#cust-center div {
+    margin: 7px;
+    font-size: 13px;
 }
 #header-search {    
     border: 1px solid red;
@@ -33,14 +107,23 @@ a {
     width: 1050px;
     height: 63px;
     margin: 0 auto;
-    
+}
+#header-search span {
+    flex-direction: row;
+}
+#header-search_logo span {
+    flex-direction: row;
+    padding: 10px;
+    vertical-align: center;
 }
 #marketCurly {
     color: #560C7B;
 }
 #beautyCurly {
     color: rgb(181, 181, 181);
-
+}
+#header-search_box span {
+    flex-direction: row;
 }
 #header-search input {
     width:400px;
@@ -48,12 +131,33 @@ a {
     font-size:20px;
     border-radius: 10px;
     outline: none;
+    position: relative;
 }
 #header-search button {
     size : 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
+#header-icons span {
+    flex-direction: row;
+}
+#header-icons {
+    border: 1px solid red;
+    width: 148px;
+    height: 36px;
+}
+#header-icons a {
+    width: 36px;
 }
 #header-categori {
-    
+    border: 1px solid red;
+    width: 1050px;
+    height: 56px;
+    margin: 0 auto;
+}
+#header-categori button {
+    border-radius: 10px;
 }
 #main1 {
     border: 1px solid black;
@@ -61,12 +165,16 @@ a {
 .event-slide-container {
     width: 300vw;
 }
-.slide-box {
+.slide-box img {
     width: 100vw;
 }
 #main2 {
     border: 1px solid black;
     align-items: center;
+}
+.sug-slide-container {
+    padding: 40px 40px;
+    margin: 38.50px 38.50px;
 }
 .slide-box2 img {
     align-items: center;
@@ -79,8 +187,9 @@ a {
     display: flex;
 }
 .advertisement img {
-    width: 80%;
-    align-items: center;
+    width: 1050px;
+    height: 140px;
+    margin: 0 auto;
 }
 #main4 {
     border: 1px solid black;
