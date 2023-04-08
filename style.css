@@ -72,7 +72,8 @@ a {
 }
 #header {
     border: 1px solid black;
-    justify-content: right;
+    justify-content: center;
+    width: 1050px;
 }
 #header-member {
     border: 1px solid red;
@@ -80,7 +81,7 @@ a {
     height: 35px;
     margin: 0 auto;
     color: black;
-    text-align: right;
+    justify-content: right;
     position: 1000px;
     display: flex;
 }
@@ -124,10 +125,27 @@ a {
     vertical-align: center;
 }
 #marketCurly {
-    color: #560C7B;
+    font-weight: 500;
+    color: rgb(95, 0, 128);
+    flex-shrink: 0;
+    margin-left: 20px;
+    font-size: 18px;
+    /* font-weight: normal; */
+    line-height: 1.33;
+    letter-spacing: normal;
+    /* color: rgb(181, 181, 181); */
+    cursor: pointer;
 }
 #beautyCurly {
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
     color: rgb(181, 181, 181);
+    cursor: pointer;
+    position: relative;
+    margin-left: 22px;
 }
 #header-search_box span {
     flex-direction: row;
